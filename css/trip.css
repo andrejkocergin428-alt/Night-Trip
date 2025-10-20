@@ -1,0 +1,195 @@
+.section-trip {
+    position: relative;
+    height: 100vh;
+}
+
+.section-trip__header {
+    gap: 30px;
+    color: var(--color-white);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.section-trip__subtitle {
+    line-height: 25px;
+    position: relative;
+    top: 10px;
+    max-width: 390px;
+}
+
+.section-trip__cross {
+    transform: translateY(50%);
+}
+
+.section-trip__rest {
+    justify-content: space-between;
+    margin-bottom: 150px;
+    display: flex;
+    border-bottom: 2px solid var(--color-main-opacity);
+}
+
+.section-trip__checked .trip__checked--active {
+    transition: 0.5s all;
+    padding: 0 72px 36px;
+    display: block;
+    position: relative;
+    width: 100%;
+    opacity: 0.4;
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+.section-trip__checked .trip__checked--active::after {
+    opacity: 0;
+    transition: 0.5s all;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    background-color: var(--color-main);
+}
+
+.section-trip__checked input:checked+span::after {
+    opacity: 1;
+}
+
+.section-trip__checked input:checked+span {
+    opacity: 1;
+}
+
+
+.section-trip__relaxation {
+    gap: 126px;
+    display: flex;
+    flex-direction: row;
+}
+
+.trip-relaxation__description {
+    line-height: 25px;
+    color: var(--color-white);
+    max-width: 465px;
+}
+
+.trip-relaxation__title {
+    padding-top: 100px;
+    margin-bottom: 70px;
+}
+
+.trip-relaxation__specification {
+    margin-bottom: 45px;
+}
+
+.section-trip__trips--img {
+    z-index: 1;
+    max-width: 486px;
+    height: 600px;
+    border-radius: 8px;
+}
+
+.section-trip__card {
+    position: relative;
+    display: inline-block;
+}
+
+.button-card__svg {
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    border: 0px solid;
+    box-shadow: -10px 14px 24px 0px #01162714;
+    cursor: pointer;
+    background-color: var(--color-main-background);
+    width: 65px;
+    height: 65px;
+}
+
+.button-card__svg--left {
+    border-radius: 8px 0 0 0;
+    right: 68px;
+}
+
+.button-card__svg--right {
+    border-radius: 0 0 8px 0;
+}
+
+.card__svg {
+    width: 24px;
+    height: 24px;
+}
+
+.card__svg--right {
+    transform: rotate(180deg);
+}
+
+.card-svg__dots {
+    z-index: -1;
+    position: absolute;
+    left: -56px;
+    bottom: -52px;
+
+}
+
+.trip-card__title {
+    left: -76px;
+    max-width: 260px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 40%;
+}
+
+.trip-card__border {
+    margin-bottom: 2px;
+    width: 180px;
+    height: 15px;
+    border-top: 2px solid var(--color-main);
+    border-left: 2px solid var(--color-main);
+}
+
+.trip-card__number {
+    margin-bottom: 10px;
+    letter-spacing: 4px;
+    color: var(--color-main);
+}
+
+.trip-card__name {
+    line-height: 35px;
+    letter-spacing: 6px;
+    color: var(--color-white);
+}
+
+.section-trip__social {
+    position: absolute;
+    right: 0;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.trip-social__share {
+    margin-bottom: 18px;
+    color: var(--color-white);
+    font-family: var(--font-family-main);
+    letter-spacing: 2px;
+}
+
+.trip-social__svg {
+    display: flex;
+    gap: 20px;
+
+}
+
+.trip-social__border {
+    position: absolute;
+    bottom: -20px;
+    width: 130px;
+    height: 32px;
+    border-bottom: 2px solid var(--color-main);
+    border-right: 2px solid var(--color-main);
+}

@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, maximum-scale=5, initial-scale=1.0" />
+		<title>Night Trips</title>
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/ui.css" />
+		<link rel="stylesheet" href="./css/variables.css" />
+		<link rel="stylesheet" href="./css/header.css" />
+		<link rel="stylesheet" href="./css/base.css" />
+		<link rel="stylesheet" href="./css/main-title.css" />
+		<link rel="stylesheet" href="./css/trip.css" />
+		<link rel="stylesheet" href="./css/people.css" />
+		<link rel="stylesheet" href="./css/cards.css" />
+		<link rel="stylesheet" href="./css/footer.css" />
+		<link rel="stylesheet" href="./css/typography.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet" />
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="header__nav container">
+				<div class="s1-b-p">
+					<p class="header__logo">
+						NT
+
+						<span class="main-color">.</span>
+					</p>
+				</div>
+
+				<div class="header__wrapper">
+					<img class="header__svg--search" src="images/icons/search.svg" alt="search icon" />
+
+					<button class="ui-button ui-button--xs" type="button">
+						<span class="i2-b-r">MENU</span><span class="ui-button__line"></span>
+					</button>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<section class="section-main">
+				<picture class="section-main__background">
+					<!-- <source srcset="images/title/main-background2.webp" type="image/webp" /> -->
+
+					<source media="(max-width: 799px)" srcset="images/title/main-background2-480.jpg" />
+
+					<source media="(min-width: 800px)" srcset="images/title/main-background2.webp" />
+
+					<img
+						class="section-main__background--img"
+						src="images/title/main-background1.png"
+						alt="Mountains" />
+				</picture>
+
+				<div class="section-main__words">
+					<div class="main-description__title">
+						<p class="h1-b-n">Night Trips</p>
+					</div>
+
+					<div class="main-description__subtitle">
+						<p class="s3-b-r">WE GOT TRIPS FOR THE TRIPPSTER IN YOU</p>
+					</div>
+
+					<div class="main-description__depiction">
+						<p class="i1-r-r">
+							Neque, eros commodo, nascetur ullamcorper vitae. Tincidunt ut venenatis, volutpat lorem ut
+							faucibus mauris, quisque. Integer gravida sed quis congue. Vel risus, arcu a viverra leo id
+							pulvinar ultricies. Enim in in in pulvinar nulla sollicitudin. Ullamcorper.
+						</p>
+					</div>
+				</div>
+
+				<div class="section-main__navigation container">
+					<button class="section-main__button">
+						<div class="main-button__name">
+							<p class="i2-b-r">SCROLL</p>
+						</div>
+
+						<span class="main-button__line" type="button"></span>
+					</button>
+
+					<div class="section-main__socials ui-social">
+						<a href="https://vprognoze.ru/cybersport/pudge-dota-2-gaid-na-geroya/"
+							><img class="main-social__svg" src="images/socials/twitter.svg" alt="twitter"
+						/></a>
+						<a href="https://dota2.fandom.com/ru/wiki/Pudge"
+							><img class="main-social__svg" src="images/socials/instagram.svg" alt="instagram"
+						/></a>
+
+						<a href="https://cyber.sports.ru/dota2/blogs/2904107.html"
+							><img class="main-social__svg" src="images/socials/facebook.svg" alt="facebook"
+						/></a>
+					</div>
+				</div>
+
+				<div class="section-main__gradient"></div>
+			</section>
+
+			<section class="section-container">
+				<div class="section-trip">
+					<div class="section-trip__header">
+						<div>
+							<p class="h2-r-n">Pick Your trip</p>
+						</div>
+
+						<img class="section-trip__cross" src="images/icons/cross.svg" alt="cross mark" />
+
+						<div class="section-trip__subtitle">
+							<div>
+								<p class="i2-r-r">
+									Our team put together some trips to you to discover, feel free to discover each of them.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div>
+						<form class="section-trip__rest">
+							<label class="section-trip__checked"
+								><input type="radio" name="trip" value="" checked /><span class="trip__checked--active i2-r-r"
+									>Chill Adventure</span
+								></label
+							>
+
+							<label class="section-trip__checked"
+								><input type="radio" name="trip" /><span class="trip__checked--active i2-r-r"
+									>Spooky Times</span
+								></label
+							>
+
+							<label class="section-trip__checked"
+								><input type="radio" name="trip" /><span class="trip__checked--active i2-r-r"
+									>Desert Madness</span
+								></label
+							>
+
+							<label class="section-trip__checked"
+								><input type="radio" name="trip" /><span class="trip__checked--active i2-r-r"
+									>Out in the wild</span
+								></label
+							>
+						</form>
+					</div>
+
+					<div class="section-trip__relaxation">
+						<div class="section-trip__card">
+							<picture class="section-trip__trips">
+								<source srcset="images/trips/Chill Adventure2.webp" type="image/webp" />
+
+								<img
+									class="section-trip__trips--img"
+									src="images/trips/Chill Adventure1.jpg"
+									alt="Mountains"
+									arc="Grand Dunes Landscape" />
+							</picture>
+
+							<button class="button-card__svg button-card__svg--left" type="button">
+								<img class="card__svg card__svg--left" src="images/icons/arrow.svg" alt="arrow" />
+							</button>
+
+							<button class="button-card__svg button-card__svg--right" type="button">
+								<img class="card__svg card__svg--right" src="images/icons/arrow.svg" alt="arrow" />
+							</button>
+
+							<img class="card-svg__dots" src="images/icons/dots.svg" alt="dots" />
+
+							<div class="trip-card__title">
+								<div class="trip-card__border"></div>
+
+								<div class="trip-card__number">
+									<p class="s2-u-r">01.</p>
+								</div>
+
+								<div class="trip-card__name">
+									<p class="s2-b-r">GRAND DUNES LANDSCAPE</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="trip-relaxation__description">
+							<div class="trip-relaxation__title">
+								<p class="h3-r-n">Chill Adventure</p>
+							</div>
+
+							<div>
+								<p class="i1-b-r">
+									Ornare vivamus molestie pellentesque nunc. Sed sapien erat ultrices curabitur. Erat id
+									fringilla arcu condimentum fames.
+								</p>
+							</div>
+
+							<div class="trip-relaxation__specification">
+								<p class="i1-r-r">
+									<br />Aliquet dictum aliquet faucibus cursus turpis. Suspendisse cum rutrum sit ut sociis.
+									Pellentesque neque orci adipiscing pharetra lacus, dignissim pharetra ipsum blandit. Feugiat
+									quis quam consectetur lectus id quis tortor vel, mattis.
+								</p>
+							</div>
+
+							<button class="ui-button ui-button--xs ui-button__font" type="button">
+								<span class="ui-button__line"></span>
+
+								<span class="i2-b-r">SEE OUR LATEST OFFER</span>
+							</button>
+						</div>
+					</div>
+
+					<div class="section-trip__social">
+						<span class="trip-social__share">SHARE IT:</span>
+
+						<div class="trip-social__svg">
+							<a href="https://dota2.fandom.com/ru/wiki/Pudge"
+								><img class="ui-social" src="images/socials/instagram.svg" alt="instagram"
+							/></a>
+
+							<a href="https://cyber.sports.ru/dota2/blogs/2904107.html"
+								><img class="ui-social" src="images/socials/facebook.svg" alt="facebook"
+							/></a>
+
+							<a href="https://vprognoze.ru/cybersport/pudge-dota-2-gaid-na-geroya/"
+								><img class="ui-social" src="images/socials/twitter.svg" alt="twitter"
+							/></a>
+						</div>
+
+						<div class="trip-social__border"></div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section-people">
+				<picture>
+					<source srcset="images/title/secondary-background2.webp" type="image/webp" />
+
+					<img
+						class="section-people__background"
+						src="images/title/secondary-background1.jpg"
+						alt="mountain" />
+				</picture>
+
+				<div class="section-people__gradient"></div>
+
+				<div class="section-container section-people__container">
+					<div class="section-people__about">
+						<div class="people-about__title">
+							<p class="h2-b-n">About Us</p>
+						</div>
+
+						<div class="people-about__subtitle">
+							<p class="s3-l-r">
+								<b>We’re a team of four passioned people.</b>
+							</p>
+
+							<p class="s3-l-r">
+								<br />We’re ready to take the world by storm and let you find new travel opportunities.
+							</p>
+
+							<p class="s3-l-r">
+								<br />Our everyday task is to make sure that you satisfied with the services and products that
+								we provide.
+							</p>
+
+							<p class="s3-l-r">
+								<b><br />With 💖 from Amsterdam, Netherlands.</b>
+							</p>
+						</div>
+
+						<button class="people-about__button ui-button" type="button">
+							<span class="i2-b-r">READ MORE ABOUT US</span><span class="ui-button__line"></span>
+						</button>
+					</div>
+
+					<div class="section-people__cards">
+						<div class="personal-card">
+							<picture>
+								<source srcset="images/people/martin2.webp" type="image/webp" />
+
+								<img class="section-people__card" src="images/people/martin1.png" alt="martin" />
+							</picture>
+
+							<div class="people-cards__board ui-cards__board">
+								<div class="people-cards__name">
+									<span class="i2-b-r">MARTIN JACK,</span>
+								</div>
+								<div class="people-cards__post">
+									<span class="i2-b-r">CEO</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="personal-card">
+							<picture>
+								<source srcset="images/people/verysmile2.webp" type="image/webp" />
+
+								<img class="section-people__card" src="images/people/verysmile1.jpg" alt="bella" />
+							</picture>
+
+							<div class="people-cards__board ui-cards__board">
+								<div class="people-cards__name">
+									<span class="i2-b-r">BELLA WAN,</span>
+								</div>
+
+								<div class="people-cards__post">
+									<span class="i2-b-r">LID</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="personal-card">
+							<picture>
+								<source srcset="images/people/girl2.webp" type="image/webp" />
+
+								<img class="section-people__card" src="images/people/girl1.jpg" alt="anya" />
+							</picture>
+
+							<div class="people-cards__board ui-cards__board">
+								<div class="people-cards__name">
+									<span class="i2-b-r">ANYA FORGER,</span>
+								</div>
+
+								<div class="people-cards__post">
+									<span class="i2-b-r">KID</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="personal-card">
+							<picture>
+								<source srcset="images/people/smile2.webp" type="image/webp" />
+
+								<img class="section-people__card" src="images/people/smile1.jpg" alt="stella" />
+							</picture>
+
+							<div class="people-cards__board ui-cards__board">
+								<div class="people-cards__name">
+									<span class="i2-b-r">STELLA BIT,</span>
+								</div>
+
+								<div class="people-cards__post">
+									<span class="i2-b-r">TOP</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<img class="section-people__dots" src="images/icons/secondary-dots.svg" alt="dots" />
+				</div>
+			</section>
+
+			<section class="section-cards">
+				<div class="section-cards__gradient"></div>
+
+				<div class="section-cards__container">
+					<div class="ui-section__line"></div>
+
+					<div class="section-cards__title--primary">
+						<p class="h2-b-n">People's thoughts</p>
+					</div>
+
+					<div class="section-cards__subtitle--primary">
+						<p class="s2-b-r">SEE WHAT ARE OTHERS SAYING</p>
+					</div>
+
+					<div class="section-cards__card">
+						<div class="cards-card">
+							<img class="section--cards__apostrophe" src="images/icons/apostrophe.svg" alt="apostrophe" />
+
+							<div class="cards-card__container">
+								<div class="cards-card__description">
+									<p class="s3-b-r">
+										Elementum mi felis, sit velit lobortis ultricies non. Mattis enim, nisl
+									</p>
+								</div>
+
+								<div>
+									<p class="s3-l-r">
+										adipiscing natoque diam et. Cum posuere in velit massa sagittis augue egestas. Eu
+										sollicitudin et quam eu. Nunc, sed imperdiet blandit morbi. Maecenas lobortis tristique
+										rutrum.
+									</p>
+								</div>
+							</div>
+
+							<div class="cards-card__people">
+								<img class="cards-card__avatar" src="images/people/judy.svg" alt="avatar" />
+
+								<div class="card-avatar__description">
+									<p class="i4-b-n">JUDY ROSELESS MARKETING HEAD AT ROM.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="cards-card">
+							<img class="section--cards__apostrophe" src="images/icons/apostrophe.svg" alt="apostrophe" />
+
+							<div class="cards-card__container">
+								<div class="cards-card__description">
+									<p class="s3-b-r">
+										Elementum mi felis, sit velit lobortis ultricies non. Mattis enim, nisl
+									</p>
+								</div>
+
+								<div>
+									<p class="s3-l-r">
+										adipiscing natoque diam et. Cum posuere in velit massa sagittis augue egestas. Eu
+										sollicitudin et quam eu. Nunc, sed imperdiet blandit morbi. Maecenas lobortis tristique
+										rutrum.
+									</p>
+								</div>
+							</div>
+
+							<div class="cards-card__people">
+								<img class="cards-card__avatar" src="images/people/judy.svg" alt="avatar" />
+
+								<div class="card-avatar__description">
+									<p class="i4-b-n">JUDY ROSELESS MARKETING HEAD AT ROM.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="cards-card">
+							<img class="section--cards__apostrophe" src="images/icons/apostrophe.svg" alt="apostrophe" />
+
+							<div class="cards-card__container">
+								<div class="cards-card__description">
+									<p class="s3-b-r">
+										Elementum mi felis, sit velit lobortis ultricies non. Mattis enim, nisl
+									</p>
+								</div>
+
+								<div>
+									<p class="s3-l-r">
+										adipiscing natoque diam et. Cum posuere in velit massa sagittis augue egestas. Eu
+										sollicitudin et quam eu. Nunc, sed imperdiet blandit morbi. Maecenas lobortis tristique
+										rutrum.
+									</p>
+								</div>
+							</div>
+
+							<div class="cards-card__people">
+								<img class="cards-card__avatar" src="images/people/judy.svg" alt="avatar" />
+
+								<div class="card-avatar__description">
+									<p class="i4-b-n">JUDY ROSELESS MARKETING HEAD AT ROM.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="cards-card">
+							<img class="section--cards__apostrophe" src="images/icons/apostrophe.svg" alt="apostrophe" />
+
+							<div class="cards-card__container">
+								<div class="cards-card__description">
+									<p class="s3-b-r">
+										Elementum mi felis, sit velit lobortis ultricies non. Mattis enim, nisl
+									</p>
+
+									<div>
+										<p class="s3-l-r">
+											adipiscing natoque diam et. Cum posuere in velit massa sagittis augue egestas. Eu
+											sollicitudin et quam eu. Nunc, sed imperdiet blandit morbi. Maecenas lobortis tristique
+											rutrum.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="cards-card__people">
+								<img class="cards-card__avatar" src="images/people/judy.svg" alt="avatar" />
+
+								<div class="card-avatar__description">
+									<p class="i4-b-n">JUDY ROSELESS MARKETING HEAD AT ROM.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="section-cards__title--secondary">
+						<p class="h2-b-n">See you soon!</p>
+					</div>
+
+					<div class="section-cards__subtitle--secondary">
+						<p class="s2-b-r">We hope to meet each other</p>
+					</div>
+
+					<div class="section-cards__subtitle--secondary">
+						<p class="s2-b-r">very soon.</p>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="ui-section__line"></div>
+
+			<div class="footer__links">
+				<div class="ui-links">
+					<div>
+						<p class="links__title s3-b-r">ABOUT</p>
+					</div>
+					<img class="links__arrow" src="images/icons/divider.svg" alt="divider" />
+
+					<div class="ui-links__wrapper">
+						<a class="i3-r-r ui-links__info" href="https://dota2.fandom.com/ru/wiki/Pudge">Our Mission</a>
+					</div>
+
+					<div class="ui-links__wrapper">
+						<a class="i3-r-r ui-links__info" href="https://dota2.fandom.com/ru/wiki/Pudge">Terms</a>
+					</div>
+
+					<div class="ui-links__wrapper">
+						<a class="i3-r-r ui-links__info" href="https://dota2.fandom.com/ru/wiki/Pudge">Copyrights</a>
+					</div>
+				</div>
+
+				<div class="ui-links">
+					<div>
+						<p class="links__title s3-b-r">FAQ</p>
+					</div>
+
+					<img class="links__arrow" src="images/icons/divider.svg" alt="divider" />
+
+					<div class="ui-links__wrapper">
+						<a class="ui-links__info i3-r-r" href="https://dota2.fandom.com/ru/wiki/Pudge">Rules</a>
+					</div>
+
+					<div class="ui-links__wrapper">
+						<a class="ui-links__info i3-r-r" href="https://dota2.fandom.com/ru/wiki/Pudge">Tickets</a>
+					</div>
+
+					<div class="ui-links__wrapper">
+						<a class="ui-links__info i3-r-r" href="https://dota2.fandom.com/ru/wiki/Pudge">Edtions</a>
+					</div>
+
+					<div class="ui-links__wrapper">
+						<a class="ui-links__info i3-r-r" href="https://dota2.fandom.com/ru/wiki/Pudge">Contribute</a>
+					</div>
+				</div>
+
+				<div class="ui-links">
+					<div>
+						<p class="links__title s3-b-r">EVENTS</p>
+					</div>
+
+					<img class="links__arrow" src="images/icons/divider.svg" alt="divider" />
+
+					<div class="ui-links__wrapper">
+						<a class="ui-links__info i3-r-r" href="https://dota2.fandom.com/ru/wiki/Pudge">Star Gazing</a>
+					</div>
+
+					<div class="ui-links__wrapper">
+						<a class="ui-links__info i3-r-r" href="https://dota2.fandom.com/ru/wiki/Pudge">Desert Mania</a>
+					</div>
+
+					<div class="ui-links__wrapper">
+						<a class="ui-links__info i3-r-r" href="https://dota2.fandom.com/ru/wiki/Pudge">Dunes Madness</a>
+					</div>
+
+					<div class="ui-links__wrapper">
+						<a class="ui-links__info i3-r-r" href="https://dota2.fandom.com/ru/wiki/Pudge">Spooky Land</a>
+					</div>
+				</div>
+
+				<div class="ui-links">
+					<div>
+						<p class="links__title s3-b-r">CONTACT US</p>
+					</div>
+
+					<img class="links__arrow" src="images/icons/divider.svg" alt="divider" />
+
+					<div class="ui-links__wrapper">
+						<a class="ui-links__info i3-r-r" href="https://dota2.fandom.com/ru/wiki/Pudge"
+							>hello@example.com</a
+						>
+					</div>
+
+					<div class="ui-links__wrapper">
+						<a class="ui-links__info i3-r-r" href="https://dota2.fandom.com/ru/wiki/Pudge">(405) 555-0128</a>
+					</div>
+
+					<div class="ui-links__wrapper">
+						<a class="ui-links__info i3-r-r" href="https://dota2.fandom.com/ru/wiki/Pudge">(252) 555-0126</a>
+					</div>
+				</div>
+
+				<div class="ui-links">
+					<div class="links__title">
+						<p class="s3-b-r">FOLLOW US</p>
+					</div>
+
+					<img class="links__arrow" src="images/icons/divider.svg" alt="divider" />
+
+					<div class="links__social">
+						<a href="https://vprognoze.ru/cybersport/pudge-dota-2-gaid-na-geroya/"
+							><img class="ui-social" src="images/socials/twitter.svg" alt="twitter"
+						/></a>
+
+						<a href="https://dota2.fandom.com/ru/wiki/Pudge"
+							><img class="ui-social" src="images/socials/instagram.svg" alt="instagram"
+						/></a>
+
+						<a href="https://cyber.sports.ru/dota2/blogs/2904107.html"
+							><img class="ui-social" src="images/socials/facebook.svg" alt="facebook"
+						/></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer__copyright">
+				<p class="i3-r-r">Copyright © Night Trips 2019. All rights reserved.</p>
+			</div>
+
+			<div class="footer__logo">
+				<p class="s1-b-p">
+					NT
+
+					<span class="main-color">.</span>
+				</p>
+			</div>
+		</footer>
+	</body>
+</html>

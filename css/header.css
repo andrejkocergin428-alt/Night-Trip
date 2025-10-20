@@ -1,0 +1,31 @@
+.header {
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 75px;
+    position: fixed;
+    z-index: 100;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.header__logo {
+    z-index: 1;
+    color: var(--color-white);
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header__svg--search {
+    cursor: pointer;
+    z-index: 1;
+}

@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'NoeDisplay-Bold';
+    src: url(../fonts/NoeDisplay-Bold.ttf);
+}
+
+.main-color {
+    color: var(--color-main);
+}
+
+.container {
+    width: 100%;
+    max-width: 1350px;
+}
+
+body {
+    background-color: var(--color-main-background);
+}
+
+input {
+    display: none;
+}
+
+.section-container {
+    position: relative;
+    width: 1350px;
+    margin: 0 auto;
+}

@@ -1,0 +1,101 @@
+.ui-button {
+    box-shadow: 5px 15px 40px 0px #00C9E033;
+    position: relative;
+    border: 1px solid var(--button-color);
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 42px;
+    background-color: var(--button-color);
+    padding: 20px 60px 20px 60px;
+    transition: 0.5s ease;
+    color: var(--color-white);
+    font-family: var(--font-family-main);
+    font-weight: var(--font-weight-title);
+    letter-spacing: 3px;
+    width: max-content;
+}
+
+.ui-social {
+    display: flex;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    gap: 22px;
+    color: var(--color-main);
+}
+
+.ui-button__line {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 2px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-white);
+    left: calc(100% - 15px);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ui-button--xs {
+    font-size: var(--font-size-i2);
+}
+
+.ui-button:hover {
+    transform: scale(1.1);
+}
+
+.ui-button:active {
+    transform: scale(1.2);
+}
+
+.ui-button:hover .ui-button__line {
+    transform: rotate(180deg) translateY(-50%);
+    left: -15px;
+}
+
+.ui-button:active .ui-button__line {
+    transform: rotate(360deg) translateY(-50%);
+}
+
+.ui-cards__board {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-white);
+    border-radius: 8px;
+    width: 186px;
+    height: 76px;
+    background-color: var(--color-white);
+    position: absolute;
+    transform: translateY(-180%) translateX(-20%);
+    letter-spacing: 1px;
+    transition: 0.3s all;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.ui-section__line {
+    cursor: pointer;
+    border: 1px solid var(--color-main);
+    width: 80px;
+    transform: rotate(90deg);
+}
+
+.ui-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ui-links__info {
+    transition: 0.3s ease;
+    cursor: pointer;
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.ui-links__info:hover {
+    opacity: 0.5;
+}
