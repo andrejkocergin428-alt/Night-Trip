@@ -1,27 +1,37 @@
 @font-face {
-    font-family: 'NoeDisplay-Bold';
-    src: url(../fonts/NoeDisplay-Bold.ttf);
+	font-family: 'NoeDisplay-Bold';
+	src: url(../fonts/NoeDisplay-Bold.ttf);
 }
 
 .main-color {
-    color: var(--color-main);
+	color: var(--color-main);
 }
 
 .container {
-    width: 100%;
-    max-width: 1350px;
+	width: 100%;
+	max-width: 1350px;
 }
 
 body {
-    background-color: var(--color-main-background);
+	background-color: var(--color-main-background);
 }
 
 input {
-    display: none;
+	display: none;
 }
 
 .section-container {
-    position: relative;
-    width: 1350px;
-    margin: 0 auto;
+	position: relative;
+	width: 1350px;
+	margin: 0 auto;
+}
+@media (max-width: 768px) {
+	.section-container {
+		width: 100%;
+		padding: 0 20px;
+		overflow: hidden;
+	}
+	.container {
+		width: 100%;
+	}
 }

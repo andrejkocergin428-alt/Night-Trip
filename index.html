@@ -25,6 +25,7 @@
 		<link
 			href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
 			rel="stylesheet" />
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 	</head>
 
 	<body>
@@ -51,8 +52,6 @@
 		<main class="main">
 			<section class="section-main">
 				<picture class="section-main__background">
-					<!-- <source srcset="images/title/main-background2.webp" type="image/webp" /> -->
-
 					<source media="(max-width: 799px)" srcset="images/title/main-background2-480.jpg" />
 
 					<source media="(min-width: 800px)" srcset="images/title/main-background2.webp" />
@@ -63,7 +62,7 @@
 						alt="Mountains" />
 				</picture>
 
-				<div class="section-main__words">
+				<div class="section-main__words" data-aos="fade-up" data-aos-duration="1000">
 					<div class="main-description__title">
 						<p class="h1-b-n">Night Trips</p>
 					</div>
@@ -109,7 +108,7 @@
 
 			<section class="section-container">
 				<div class="section-trip">
-					<div class="section-trip__header">
+					<div class="section-trip__header" data-aos="zoom-in-down" data-aos-duration="1000">
 						<div>
 							<p class="h2-r-n">Pick Your trip</p>
 						</div>
@@ -126,7 +125,7 @@
 					</div>
 
 					<div>
-						<form class="section-trip__rest">
+						<form class="section-trip__rest" data-aos="zoom-in-up" data-aos-duration="1000">
 							<label class="section-trip__checked"
 								><input type="radio" name="trip" value="" checked /><span class="trip__checked--active i2-r-r"
 									>Chill Adventure</span
@@ -154,24 +153,27 @@
 					</div>
 
 					<div class="section-trip__relaxation">
-						<div class="section-trip__card">
-							<picture class="section-trip__trips">
-								<source srcset="images/trips/Chill Adventure2.webp" type="image/webp" />
+						<div class="section-trip__card" data-aos="zoom-out" data-aos-duration="100000">
+							<div class="section-trip__card--settings">
+								<picture class="section-trip__trips">
+									<source srcset="images/trips/Chill Adventure2.webp" type="image/webp" />
 
-								<img
-									class="section-trip__trips--img"
-									src="images/trips/Chill Adventure1.jpg"
-									alt="Mountains"
-									arc="Grand Dunes Landscape" />
-							</picture>
+									<img
+										class="section-trip__trips--img"
+										src="images/trips/Chill Adventure1.jpg"
+										alt="Mountains"
+										arc="Grand Dunes Landscape" />
+								</picture>
+								<div class="card__buttons">
+									<button class="button-card__svg button-card__svg--left" type="button">
+										<img class="card__svg card__svg--left" src="images/icons/arrow.svg" alt="arrow" />
+									</button>
 
-							<button class="button-card__svg button-card__svg--left" type="button">
-								<img class="card__svg card__svg--left" src="images/icons/arrow.svg" alt="arrow" />
-							</button>
-
-							<button class="button-card__svg button-card__svg--right" type="button">
-								<img class="card__svg card__svg--right" src="images/icons/arrow.svg" alt="arrow" />
-							</button>
+									<button class="button-card__svg button-card__svg--right" type="button">
+										<img class="card__svg card__svg--right" src="images/icons/arrow.svg" alt="arrow" />
+									</button>
+								</div>
+							</div>
 
 							<img class="card-svg__dots" src="images/icons/dots.svg" alt="dots" />
 
@@ -188,7 +190,7 @@
 							</div>
 						</div>
 
-						<div class="trip-relaxation__description">
+						<div class="trip-relaxation__description" data-aos="fade-left" data-aos-duration="1000">
 							<div class="trip-relaxation__title">
 								<p class="h3-r-n">Chill Adventure</p>
 							</div>
@@ -252,11 +254,11 @@
 
 				<div class="section-container section-people__container">
 					<div class="section-people__about">
-						<div class="people-about__title">
+						<div class="people-about__title" data-aos="fade-right" data-aos-duration="1000">
 							<p class="h2-b-n">About Us</p>
 						</div>
 
-						<div class="people-about__subtitle">
+						<div class="people-about__subtitle" data-aos="fade-right" data-aos-duration="1000">
 							<p class="s3-l-r">
 								<b>We’re a team of four passioned people.</b>
 							</p>
@@ -275,13 +277,17 @@
 							</p>
 						</div>
 
-						<button class="people-about__button ui-button" type="button">
+						<button
+							class="people-about__button ui-button"
+							type="button"
+							data-aos="fade-right"
+							data-aos-duration="1000">
 							<span class="i2-b-r">READ MORE ABOUT US</span><span class="ui-button__line"></span>
 						</button>
 					</div>
 
 					<div class="section-people__cards">
-						<div class="personal-card">
+						<div class="personal-card" data-aos="fade-down-right">
 							<picture>
 								<source srcset="images/people/martin2.webp" type="image/webp" />
 
@@ -298,7 +304,7 @@
 							</div>
 						</div>
 
-						<div class="personal-card">
+						<div class="personal-card" data-aos="fade-down-left">
 							<picture>
 								<source srcset="images/people/verysmile2.webp" type="image/webp" />
 
@@ -316,7 +322,7 @@
 							</div>
 						</div>
 
-						<div class="personal-card">
+						<div class="personal-card" data-aos="fade-up-right">
 							<picture>
 								<source srcset="images/people/girl2.webp" type="image/webp" />
 
@@ -334,7 +340,7 @@
 							</div>
 						</div>
 
-						<div class="personal-card">
+						<div class="personal-card" data-aos="fade-up-left">
 							<picture>
 								<source srcset="images/people/smile2.webp" type="image/webp" />
 
@@ -363,16 +369,16 @@
 				<div class="section-cards__container">
 					<div class="ui-section__line"></div>
 
-					<div class="section-cards__title--primary">
+					<div class="section-cards__title--primary" data-aos="fade-up" data-aos-duration="1000">
 						<p class="h2-b-n">People's thoughts</p>
 					</div>
 
-					<div class="section-cards__subtitle--primary">
+					<div class="section-cards__subtitle--primary" data-aos="fade-up" data-aos-duration="1000">
 						<p class="s2-b-r">SEE WHAT ARE OTHERS SAYING</p>
 					</div>
 
 					<div class="section-cards__card">
-						<div class="cards-card">
+						<div class="cards-card" data-aos="fade-up" data-aos-duration="1000">
 							<img class="section--cards__apostrophe" src="images/icons/apostrophe.svg" alt="apostrophe" />
 
 							<div class="cards-card__container">
@@ -380,14 +386,14 @@
 									<p class="s3-b-r">
 										Elementum mi felis, sit velit lobortis ultricies non. Mattis enim, nisl
 									</p>
-								</div>
 
-								<div>
-									<p class="s3-l-r">
-										adipiscing natoque diam et. Cum posuere in velit massa sagittis augue egestas. Eu
-										sollicitudin et quam eu. Nunc, sed imperdiet blandit morbi. Maecenas lobortis tristique
-										rutrum.
-									</p>
+									<div>
+										<p class="s3-l-r">
+											adipiscing natoque diam et. Cum posuere in velit massa sagittis augue egestas. Eu
+											sollicitudin et quam eu. Nunc, sed imperdiet blandit morbi. Maecenas lobortis tristique
+											rutrum.
+										</p>
+									</div>
 								</div>
 							</div>
 
@@ -400,7 +406,7 @@
 							</div>
 						</div>
 
-						<div class="cards-card">
+						<div class="cards-card" data-aos="flip-right">
 							<img class="section--cards__apostrophe" src="images/icons/apostrophe.svg" alt="apostrophe" />
 
 							<div class="cards-card__container">
@@ -408,14 +414,14 @@
 									<p class="s3-b-r">
 										Elementum mi felis, sit velit lobortis ultricies non. Mattis enim, nisl
 									</p>
-								</div>
 
-								<div>
-									<p class="s3-l-r">
-										adipiscing natoque diam et. Cum posuere in velit massa sagittis augue egestas. Eu
-										sollicitudin et quam eu. Nunc, sed imperdiet blandit morbi. Maecenas lobortis tristique
-										rutrum.
-									</p>
+									<div>
+										<p class="s3-l-r">
+											adipiscing natoque diam et. Cum posuere in velit massa sagittis augue egestas. Eu
+											sollicitudin et quam eu. Nunc, sed imperdiet blandit morbi. Maecenas lobortis tristique
+											rutrum.
+										</p>
+									</div>
 								</div>
 							</div>
 
@@ -428,7 +434,7 @@
 							</div>
 						</div>
 
-						<div class="cards-card">
+						<div class="cards-card" data-aos="zoom-in-up">
 							<img class="section--cards__apostrophe" src="images/icons/apostrophe.svg" alt="apostrophe" />
 
 							<div class="cards-card__container">
@@ -436,14 +442,14 @@
 									<p class="s3-b-r">
 										Elementum mi felis, sit velit lobortis ultricies non. Mattis enim, nisl
 									</p>
-								</div>
 
-								<div>
-									<p class="s3-l-r">
-										adipiscing natoque diam et. Cum posuere in velit massa sagittis augue egestas. Eu
-										sollicitudin et quam eu. Nunc, sed imperdiet blandit morbi. Maecenas lobortis tristique
-										rutrum.
-									</p>
+									<div>
+										<p class="s3-l-r">
+											adipiscing natoque diam et. Cum posuere in velit massa sagittis augue egestas. Eu
+											sollicitudin et quam eu. Nunc, sed imperdiet blandit morbi. Maecenas lobortis tristique
+											rutrum.
+										</p>
+									</div>
 								</div>
 							</div>
 
@@ -456,7 +462,7 @@
 							</div>
 						</div>
 
-						<div class="cards-card">
+						<div class="cards-card" data-aos="fade-down" data-aos-duration="1000">
 							<img class="section--cards__apostrophe" src="images/icons/apostrophe.svg" alt="apostrophe" />
 
 							<div class="cards-card__container">
@@ -485,15 +491,15 @@
 						</div>
 					</div>
 
-					<div class="section-cards__title--secondary">
+					<div class="section-cards__title--secondary" data-aos="fade-up" data-aos-duration="1000">
 						<p class="h2-b-n">See you soon!</p>
 					</div>
 
-					<div class="section-cards__subtitle--secondary">
+					<div class="section-cards__subtitle--secondary" data-aos="fade-up" data-aos-duration="1000">
 						<p class="s2-b-r">We hope to meet each other</p>
 					</div>
 
-					<div class="section-cards__subtitle--secondary">
+					<div class="section-cards__subtitle--secondary" data-aos="fade-up" data-aos-duration="1000">
 						<p class="s2-b-r">very soon.</p>
 					</div>
 				</div>
@@ -628,5 +634,9 @@
 				</p>
 			</div>
 		</footer>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
 	</body>
 </html>

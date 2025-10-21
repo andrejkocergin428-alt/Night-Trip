@@ -1,195 +1,262 @@
 .section-trip {
-    position: relative;
-    height: 100vh;
+	position: relative;
+	height: 140vh;
+	width: 100%;
 }
 
 .section-trip__header {
-    gap: 30px;
-    color: var(--color-white);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 80px;
+	gap: 30px;
+	color: var(--color-white);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 80px;
 }
 
 .section-trip__subtitle {
-    line-height: 25px;
-    position: relative;
-    top: 10px;
-    max-width: 390px;
+	line-height: 25px;
+	position: relative;
+	top: 10px;
+	max-width: 390px;
 }
 
 .section-trip__cross {
-    transform: translateY(50%);
+	transform: translateY(50%);
 }
 
 .section-trip__rest {
-    justify-content: space-between;
-    margin-bottom: 150px;
-    display: flex;
-    border-bottom: 2px solid var(--color-main-opacity);
+	justify-content: space-between;
+	margin-bottom: 150px;
+	display: flex;
+	border-bottom: 2px solid var(--color-main-opacity);
 }
 
 .section-trip__checked .trip__checked--active {
-    transition: 0.5s all;
-    padding: 0 72px 36px;
-    display: block;
-    position: relative;
-    width: 100%;
-    opacity: 0.4;
-    color: var(--color-white);
-    cursor: pointer;
+	transition: 0.5s all;
+	padding: 0 72px 36px;
+	display: block;
+	position: relative;
+	width: 100%;
+	opacity: 0.4;
+	color: var(--color-white);
+	cursor: pointer;
 }
 
 .section-trip__checked .trip__checked--active::after {
-    opacity: 0;
-    transition: 0.5s all;
-    content: "";
-    display: block;
-    width: 100%;
-    height: 1px;
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    background-color: var(--color-main);
+	opacity: 0;
+	transition: 0.5s all;
+	content: '';
+	display: block;
+	width: 100%;
+	height: 1px;
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	background-color: var(--color-main);
 }
 
-.section-trip__checked input:checked+span::after {
-    opacity: 1;
+.section-trip__checked input:checked + span::after {
+	opacity: 1;
 }
 
-.section-trip__checked input:checked+span {
-    opacity: 1;
+.section-trip__checked input:checked + span {
+	opacity: 1;
 }
-
 
 .section-trip__relaxation {
-    gap: 126px;
-    display: flex;
-    flex-direction: row;
+	gap: 126px;
+	display: flex;
+	flex-direction: row;
 }
 
 .trip-relaxation__description {
-    line-height: 25px;
-    color: var(--color-white);
-    max-width: 465px;
+	line-height: 25px;
+	color: var(--color-white);
+	max-width: 465px;
 }
 
 .trip-relaxation__title {
-    padding-top: 100px;
-    margin-bottom: 70px;
+	padding-top: 100px;
+	margin-bottom: 70px;
 }
 
 .trip-relaxation__specification {
-    margin-bottom: 45px;
+	margin-bottom: 45px;
 }
 
 .section-trip__trips--img {
-    z-index: 1;
-    max-width: 486px;
-    height: 600px;
-    border-radius: 8px;
+	z-index: 1;
+	max-width: 486px;
+	height: 600px;
+	border-radius: 8px;
 }
 
 .section-trip__card {
-    position: relative;
-    display: inline-block;
+	position: relative;
+	display: inline-block;
 }
-
+.section-trip__card--settings {
+	width: 100%;
+	position: relative;
+}
+.card__buttons {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
 .button-card__svg {
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    border: 0px solid;
-    box-shadow: -10px 14px 24px 0px #01162714;
-    cursor: pointer;
-    background-color: var(--color-main-background);
-    width: 65px;
-    height: 65px;
+	bottom: 0;
+	right: 0;
+	position: relative;
+	border: 0px solid;
+	box-shadow: -10px 14px 24px 0px #01162714;
+	cursor: pointer;
+	background-color: var(--color-main-background);
+	width: 65px;
+	height: 65px;
 }
 
 .button-card__svg--left {
-    border-radius: 8px 0 0 0;
-    right: 68px;
+	border-radius: 8px 0 0 0;
 }
 
 .button-card__svg--right {
-    border-radius: 0 0 8px 0;
+	border-radius: 0 0 8px 0;
 }
 
 .card__svg {
-    width: 24px;
-    height: 24px;
+	width: 24px;
+	height: 24px;
 }
 
 .card__svg--right {
-    transform: rotate(180deg);
+	transform: rotate(180deg);
 }
 
 .card-svg__dots {
-    z-index: -1;
-    position: absolute;
-    left: -56px;
-    bottom: -52px;
-
+	z-index: -1;
+	position: absolute;
+	left: -56px;
+	bottom: -52px;
 }
 
 .trip-card__title {
-    left: -76px;
-    max-width: 260px;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 40%;
+	left: -76px;
+	max-width: 260px;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 40%;
 }
 
 .trip-card__border {
-    margin-bottom: 2px;
-    width: 180px;
-    height: 15px;
-    border-top: 2px solid var(--color-main);
-    border-left: 2px solid var(--color-main);
+	margin-bottom: 2px;
+	width: 180px;
+	height: 15px;
+	border-top: 2px solid var(--color-main);
+	border-left: 2px solid var(--color-main);
 }
 
 .trip-card__number {
-    margin-bottom: 10px;
-    letter-spacing: 4px;
-    color: var(--color-main);
+	margin-bottom: 10px;
+	letter-spacing: 4px;
+	color: var(--color-main);
 }
 
 .trip-card__name {
-    line-height: 35px;
-    letter-spacing: 6px;
-    color: var(--color-white);
+	line-height: 35px;
+	letter-spacing: 6px;
+	color: var(--color-white);
 }
 
 .section-trip__social {
-    position: absolute;
-    right: 0;
-    width: max-content;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+	position: absolute;
+	right: 0;
+	width: max-content;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
 }
 
 .trip-social__share {
-    margin-bottom: 18px;
-    color: var(--color-white);
-    font-family: var(--font-family-main);
-    letter-spacing: 2px;
+	margin-bottom: 18px;
+	color: var(--color-white);
+	font-family: var(--font-family-main);
+	letter-spacing: 2px;
 }
 
 .trip-social__svg {
-    display: flex;
-    gap: 20px;
-
+	display: flex;
+	gap: 20px;
 }
 
 .trip-social__border {
-    position: absolute;
-    bottom: -20px;
-    width: 130px;
-    height: 32px;
-    border-bottom: 2px solid var(--color-main);
-    border-right: 2px solid var(--color-main);
+	position: absolute;
+	bottom: -20px;
+	width: 130px;
+	height: 32px;
+	border-bottom: 2px solid var(--color-main);
+	border-right: 2px solid var(--color-main);
+}
+@media (max-width: 768px) {
+	.section-trip {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		height: auto;
+		padding: 60px 20px 80px 20px;
+	}
+	.section-trip__header {
+		flex-direction: column;
+		gap: 10px;
+		margin-bottom: 40px;
+	}
+	.section-trip__rest {
+		flex-wrap: wrap;
+		gap: 20px;
+		margin-bottom: 80px;
+		border-bottom: none;
+	}
+	.section-trip__trips--img {
+		max-width: 100%;
+		height: auto;
+	}
+	.section-trip__social {
+		position: relative;
+		right: auto;
+		margin-top: 40px;
+		align-items: center;
+	}
+	.section-trip__relaxation {
+		flex-direction: column;
+		gap: 40px;
+	}
+	.section-trip__trips--img {
+		max-width: 100%;
+		min-height: 400px;
+	}
+	.button-card__svg {
+		width: 30px;
+		height: 30px;
+	}
+	.card-svg__dots {
+		left: -36px;
+		bottom: -30px;
+	}
+	.trip-card__title {
+		left: -25px;
+		top: 30%;
+	}
+	.section-trip__cross {
+		display: none;
+	}
+	.section-trip__checked {
+		flex: 0 1 45%;
+	}
+	.section-trip__checked .trip__checked--active {
+		padding: 0;
+	}
+	.trip-relaxation__title {
+		margin-bottom: 40px;
+	}
 }

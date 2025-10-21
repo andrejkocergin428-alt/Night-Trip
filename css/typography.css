@@ -1,22 +1,32 @@
 :root {
-    /* font */
-    --font-size-s1: 36px;
-    --font-size-h1: 120px;
-    --font-size-i3: 15px;
-    --font-size-i2: 16px;
-    --font-size-s3: 18px;
-    --font-size-i1: 17px;
-    --font-size-i4: 12px;
-    --font-size-h2: 72px;
-    --font-size-h3: 65px;
-    --font-size-s2: 24px;
-    --font-weight-title: 700;
-    --font-weight-subtitle: 300;
-    --font-weight-links: 400;
-    --font-weight-extra-bolt: 800;
-    --font-family-main: "Roboto", sans-serif;
-    --font-family-title: 'NoeDisplay-Bold';
-    --font-family-logo: "Playfair Display", serif;
+	/* font */
+	--font-size-h1: 120px;
+	--font-size-h2: 72px;
+	--font-size-h3: 65px;
+	--font-size-s1: 36px;
+	--font-size-s2: 24px;
+	--font-size-s3: 18px;
+	--font-size-i1: 17px;
+	--font-size-i2: 16px;
+	--font-size-i3: 15px;
+	--font-size-i4: 12px;
+	--font-size-s1-m: 24px;
+	--font-size-h1-m: 60px;
+	--font-size-i3-m: 10px;
+	--font-size-i2-m: 11px;
+	--font-size-s3-m: 13px;
+	--font-size-i1-m: 12px;
+	--font-size-i4-m: 10px;
+	--font-size-h2-m: 36px;
+	--font-size-h3-m: 30px;
+	--font-size-s2-m: 18px;
+	--font-weight-title: 700;
+	--font-weight-subtitle: 300;
+	--font-weight-links: 400;
+	--font-weight-extra-bolt: 800;
+	--font-family-main: 'Roboto', sans-serif;
+	--font-family-title: 'NoeDisplay-Bold';
+	--font-family-logo: 'Playfair Display', serif;
 }
 
 /* $thickness: (
@@ -32,91 +42,132 @@
 ); */
 
 .h2-b-n {
-    font-family: var(--font-family-title);
-    font-size: var(--font-size-h2);
-    font-weight: var(--font-weight-title);
+	font-family: var(--font-family-title);
+	font-size: var(--font-size-h2);
+	font-weight: var(--font-weight-title);
 }
 
 .s2-b-r {
-    font-family: var(--font-family-main);
-    font-size: var(--font-size-s2);
-    font-weight: var(--font-weight-title);
+	font-family: var(--font-family-main);
+	font-size: var(--font-size-s2);
+	font-weight: var(--font-weight-title);
 }
 
 .s3-l-r {
-    font-family: var(--font-family-main);
-    font-weight: var(--font-weight-subtitle);
-    font-size: var(--font-size-s3);
+	font-family: var(--font-family-main);
+	font-weight: var(--font-weight-subtitle);
+	font-size: var(--font-size-s3);
 }
 
 .i4-b-n {
-    font-family: var(--font-family-main);
-    font-weight: var(--font-weight-title);
-    font-size: var(--font-size-i4);
+	font-family: var(--font-family-main);
+	font-weight: var(--font-weight-title);
+	font-size: var(--font-size-i4);
 }
 
 .s3-b-r {
-    font-family: var(--font-family-main);
-    font-size: var(--font-size-s3);
-    font-weight: var(--font-weight-title);
+	font-family: var(--font-family-main);
+	font-size: var(--font-size-s3);
+	font-weight: var(--font-weight-title);
 }
 
 .i3-r-r {
-    font-family: var(--font-family-main);
-    font-size: var(--font-size-i3);
-    font-weight: var(--font-weight-link);
+	font-family: var(--font-family-main);
+	font-size: var(--font-size-i3);
+	font-weight: var(--font-weight-link);
 }
 
 .s1-b-p {
-    font-family: var(--font-family-logo);
-    font-size: var(--font-size-s1);
-    font-weight: var(--font-weight-title);
+	font-family: var(--font-family-logo);
+	font-size: var(--font-size-s1);
+	font-weight: var(--font-weight-title);
 }
 
 .h1-b-n {
-    font-size: var(--font-size-h1);
-    font-family: var(--font-family-title);
-    font-weight: var(--font-weight-title);
+	font-size: var(--font-size-h1);
+	font-family: var(--font-family-title);
+	font-weight: var(--font-weight-title);
 }
 
 .i1-r-r {
-    font-size: var(--font-size-i1);
-    font-family: var(--font-family-main);
-    font-weight: var(--font-weight-link);
+	font-size: var(--font-size-i1);
+	font-family: var(--font-family-main);
+	font-weight: var(--font-weight-link);
 }
 
 .i2-b-r {
-    font-weight: var(--font-weight-title);
-    font-family: var(--font-family-main);
-    font-size: var(--font-size-i2);
+	font-weight: var(--font-weight-title);
+	font-family: var(--font-family-main);
+	font-size: var(--font-size-i2);
 }
 
 .h2-r-n {
-    font-family: var(--font-family-title);
-    font-size: var(--font-size-h2);
-    font-weight: var(--font-weight-link);
+	font-family: var(--font-family-title);
+	font-size: var(--font-size-h2);
+	font-weight: var(--font-weight-link);
 }
 
 .i2-r-r {
-    font-family: var(--font-family-main);
-    font-size: var(--font-size-i2);
-    font-weight: var(--font-weight-link);
+	font-family: var(--font-family-main);
+	font-size: var(--font-size-i2);
+	font-weight: var(--font-weight-link);
 }
 
 .h3-r-n {
-    font-family: var(--font-family-title);
-    font-size: var(--font-size-h3);
-    font-weight: var(--font-weight-link);
+	font-family: var(--font-family-title);
+	font-size: var(--font-size-h3);
+	font-weight: var(--font-weight-link);
 }
 
 .i1-b-r {
-    font-weight: var(--font-weight-title);
-    font-family: var(--font-family-main);
-    font-size: var(--font-size-i1);
+	font-weight: var(--font-weight-title);
+	font-family: var(--font-family-main);
+	font-size: var(--font-size-i1);
 }
 
 .s2-u-r {
-    font-weight: var(--font-weight-extra-bolt);
-    font-family: var(--font-family-main);
-    font-size: var(--font-size-s2);
+	font-weight: var(--font-weight-extra-bolt);
+	font-family: var(--font-family-main);
+	font-size: var(--font-size-s2);
+}
+@media (max-width: 768px) {
+	.i1-r-r {
+		font-size: var(--font-size-i1-m);
+	}
+	.h1-b-n {
+		font-size: var(--font-size-h1-m);
+	}
+	.s3-b-r {
+		font-size: var(--font-size-s3-m);
+	}
+	.i2-b-r {
+		font-size: var(--font-size-i2-m);
+	}
+	.i3-r-r {
+		font-size: var(--font-size-i3-m);
+	}
+	.i4-b-n {
+		font-size: var(--font-size-i4-m);
+	}
+	.h2-b-n {
+		font-size: var(--font-size-h2-m);
+	}
+	.h3-r-n {
+		font-size: var(--font-size-h3-m);
+	}
+	.s2-b-r {
+		font-size: var(--font-size-s2-m);
+	}
+	.s1-b-p {
+		font-size: var(--font-size-s1-m);
+	}
+	.h2-r-n {
+		font-size: var(--font-size-h2-m);
+	}
+	.i2-r-r {
+		font-size: var(--font-size-i2-m);
+	}
+	.s3-l-r {
+		font-size: var(--font-size-s3-m);
+	}
 }
