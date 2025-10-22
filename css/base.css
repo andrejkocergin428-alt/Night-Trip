@@ -16,10 +16,6 @@ body {
 	background-color: var(--color-main-background);
 }
 
-input {
-	display: none;
-}
-
 .section-container {
 	position: relative;
 	width: 1350px;

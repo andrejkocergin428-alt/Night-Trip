@@ -198,6 +198,11 @@
 	border-bottom: 2px solid var(--color-main);
 	border-right: 2px solid var(--color-main);
 }
+
+.section-trip__checked input {
+	display: none;
+}
+
 @media (max-width: 768px) {
 	.section-trip {
 		display: flex;

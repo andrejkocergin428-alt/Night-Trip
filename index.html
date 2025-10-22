@@ -40,11 +40,23 @@
 				</div>
 
 				<div class="header__wrapper">
-					<img class="header__svg--search" src="images/icons/search.svg" alt="search icon" />
-
-					<button class="ui-button ui-button--xs" type="button">
-						<span class="i2-b-r">MENU</span><span class="ui-button__line"></span>
-					</button>
+					<input id="search-toggle" type="checkbox" style="display: none" />
+					<label class="header__action" for="search-toggle">
+						<img class="header__svg--search" src="images/icons/search.svg" alt="search icon" />
+					</label>
+					<input class="header__action--search" type="search" placeholder="search" />
+					<div class="ui-dropdown">
+						<input type="checkbox" name="dropdown-1" id="dropdown-1" />
+						<label class="ui-button ui-button--xs" type="button" for="dropdown-1">
+							<span class="i2-b-r">MENU</span><span class="ui-button__line"></span>
+						</label>
+						<div class="ui-dropdown__box">
+							<a href="#trip" class="ui-dropdown__link i2-b-r">Adventures</a>
+							<a href="#about us" class="ui-dropdown__link i2-b-r">About Us</a>
+							<a href="#reviews" class="ui-dropdown__link i2-b-r">Reviews</a>
+							<a href="#contact" class="ui-dropdown__link i2-b-r">Contact With Us</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</header>
@@ -89,16 +101,16 @@
 						<span class="main-button__line" type="button"></span>
 					</button>
 
-					<div class="section-main__socials ui-social">
+					<div class="section-main__socials">
 						<a href="https://vprognoze.ru/cybersport/pudge-dota-2-gaid-na-geroya/"
-							><img class="main-social__svg" src="images/socials/twitter.svg" alt="twitter"
+							><img class="main-social__svg ui-social" src="images/socials/twitter.svg" alt="twitter"
 						/></a>
 						<a href="https://dota2.fandom.com/ru/wiki/Pudge"
-							><img class="main-social__svg" src="images/socials/instagram.svg" alt="instagram"
+							><img class="main-social__svg ui-social" src="images/socials/instagram.svg" alt="instagram"
 						/></a>
 
 						<a href="https://cyber.sports.ru/dota2/blogs/2904107.html"
-							><img class="main-social__svg" src="images/socials/facebook.svg" alt="facebook"
+							><img class="main-social__svg ui-social" src="images/socials/facebook.svg" alt="facebook"
 						/></a>
 					</div>
 				</div>
@@ -110,7 +122,7 @@
 				<div class="section-trip">
 					<div class="section-trip__header" data-aos="zoom-in-down" data-aos-duration="1000">
 						<div>
-							<p class="h2-r-n">Pick Your trip</p>
+							<p class="h2-r-n" id="trip">Pick Your trip</p>
 						</div>
 
 						<img class="section-trip__cross" src="images/icons/cross.svg" alt="cross mark" />
@@ -255,7 +267,7 @@
 				<div class="section-container section-people__container">
 					<div class="section-people__about">
 						<div class="people-about__title" data-aos="fade-right" data-aos-duration="1000">
-							<p class="h2-b-n">About Us</p>
+							<p class="h2-b-n" id="about us">About Us</p>
 						</div>
 
 						<div class="people-about__subtitle" data-aos="fade-right" data-aos-duration="1000">
@@ -364,7 +376,7 @@
 			</section>
 
 			<section class="section-cards">
-				<div class="section-cards__gradient"></div>
+				<div class="section-cards__gradient" id="reviews"></div>
 
 				<div class="section-cards__container">
 					<div class="ui-section__line"></div>
@@ -492,7 +504,7 @@
 					</div>
 
 					<div class="section-cards__title--secondary" data-aos="fade-up" data-aos-duration="1000">
-						<p class="h2-b-n">See you soon!</p>
+						<p class="h2-b-n" id="contact">See you soon!</p>
 					</div>
 
 					<div class="section-cards__subtitle--secondary" data-aos="fade-up" data-aos-duration="1000">

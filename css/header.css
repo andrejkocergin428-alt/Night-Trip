@@ -30,6 +30,26 @@
 .header__svg--search {
 	cursor: pointer;
 	z-index: 1;
+	transition: 0.5s all;
+}
+.header__svg--search:hover {
+	transform: scale(1.1);
+}
+.header__action--search {
+	display: none;
+	border: 2px solid var(--color-main);
+	padding: 5px 15px;
+	box-shadow: 0 0 25px var(--color-main-opacity);
+	background-color: transparent;
+	border-radius: 12px;
+	width: 200px;
+	height: 30px;
+	color: var(--color-white);
+	outline: none;
+}
+
+.header__wrapper input:checked ~ .header__action--search {
+	display: block;
 }
 @media (max-width: 768px) {
 	.header__wrapper {

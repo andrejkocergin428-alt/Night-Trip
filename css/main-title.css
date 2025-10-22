@@ -83,12 +83,15 @@
 }
 
 .section-main__socials {
+	top: 50px;
+	position: relative;
+	display: flex;
 	flex-direction: column;
-	padding-right: 40px;
+	gap: 20px;
 }
 
 .section-main__gradient {
-	z-index: 4;
+	z-index: -1;
 	position: absolute;
 	background: linear-gradient(180deg, rgba(1, 22, 39, 0) 0%, #011627 76.64%, #011627 100%);
 	width: 100%;
@@ -101,5 +104,8 @@
 	}
 	.section-main__words {
 		gap: 15px;
+	}
+	.section-main__socials {
+		padding-right: 15px;
 	}
 }
