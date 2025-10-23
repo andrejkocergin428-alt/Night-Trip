@@ -47,14 +47,14 @@
 					<input class="header-action__search" type="search" placeholder="search" />
 					<div class="ui-dropdown">
 						<input type="checkbox" name="dropdown-1" id="dropdown-1" />
-						<label class="ui-button ui-button--xs" type="button" for="dropdown-1">
+						<label role="button" class="ui-button ui-button--xs" type="button" for="dropdown-1">
 							<span class="i2-b-r">MENU</span><span class="ui-button__line"></span>
 						</label>
 						<div class="ui-dropdown__box">
-							<a href="#trip" class="ui-dropdown__link i2-b-r">Adventures</a>
-							<a href="#about us" class="ui-dropdown__link i2-b-r">About Us</a>
-							<a href="#reviews" class="ui-dropdown__link i2-b-r">Reviews</a>
-							<a href="#contact" class="ui-dropdown__link i2-b-r">Contact With Us</a>
+							<a aria-label="adventures" href="#trip" class="ui-dropdown__link i2-b-r">Adventures</a>
+							<a aria-label="about us" href="#about us" class="ui-dropdown__link i2-b-r">About Us</a>
+							<a aria-label="reviews" href="#reviews" class="ui-dropdown__link i2-b-r">Reviews</a>
+							<a aria-label="contacts" href="#contact" class="ui-dropdown__link i2-b-r">Contact With Us</a>
 						</div>
 					</div>
 				</div>
@@ -90,7 +90,7 @@
 				</div>
 
 				<div class="section-main__navigation container">
-					<button class="section-main__button">
+					<button class="section-main__button" aria-label="scroll down" type="button">
 						<div class="main-button__name">
 							<p class="i2-b-r">SCROLL</p>
 						</div>
@@ -99,14 +99,17 @@
 					</button>
 
 					<div class="section-main__socials">
-						<a href="https://vprognoze.ru/cybersport/pudge-dota-2-gaid-na-geroya/" target="_blank"
+						<a
+							aria-label="twitter"
+							href="https://vprognoze.ru/cybersport/pudge-dota-2-gaid-na-geroya/"
+							target="_blank"
 							><img class="main-social__svg ui-social" src="images/socials/twitter.svg" alt="twitter"
 						/></a>
-						<a href="https://dota2.fandom.com/ru/wiki/Pudge" target="_blank"
+						<a aria-label="instagram" href="https://dota2.fandom.com/ru/wiki/Pudge" target="_blank"
 							><img class="main-social__svg ui-social" src="images/socials/instagram.svg" alt="instagram"
 						/></a>
 
-						<a href="https://cyber.sports.ru/dota2/blogs/2904107.html" target="_blank"
+						<a aria-label="facebook" href="https://cyber.sports.ru/dota2/blogs/2904107.html" target="_blank"
 							><img class="main-social__svg ui-social" src="images/socials/facebook.svg" alt="facebook"
 						/></a>
 					</div>
@@ -174,11 +177,17 @@
 										arc="Grand Dunes Landscape" />
 								</picture>
 								<div class="card__buttons">
-									<button class="button-card__svg button-card__svg--left" type="button">
+									<button
+										aria-label="left button"
+										class="button-card__svg button-card__svg--left"
+										type="button">
 										<img class="card__svg card__svg--left" src="images/icons/arrow.svg" alt="arrow" />
 									</button>
 
-									<button class="button-card__svg button-card__svg--right" type="button">
+									<button
+										aria-label="right button"
+										class="button-card__svg button-card__svg--right"
+										type="button">
 										<img class="card__svg card__svg--right" src="images/icons/arrow.svg" alt="arrow" />
 									</button>
 								</div>
@@ -219,7 +228,10 @@
 								</p>
 							</div>
 
-							<button class="ui-button ui-button--xs ui-button__font" type="button">
+							<button
+								aria-label="our latest offer"
+								class="ui-button ui-button--xs ui-button__font"
+								type="button">
 								<span class="ui-button__line"></span>
 
 								<span class="i2-b-r">SEE OUR LATEST OFFER</span>
@@ -231,15 +243,18 @@
 						<span class="trip-social__share">SHARE IT:</span>
 
 						<div class="trip-social__svg">
-							<a href="https://dota2.fandom.com/ru/wiki/Pudge " target="_blank"
+							<a aria-label="instagram" href="https://dota2.fandom.com/ru/wiki/Pudge " target="_blank"
 								><img class="ui-social" src="images/socials/instagram.svg" alt="instagram"
 							/></a>
 
-							<a href="https://cyber.sports.ru/dota2/blogs/2904107.html" target="_blank"
+							<a aria-label="facebook" href="https://cyber.sports.ru/dota2/blogs/2904107.html" target="_blank"
 								><img class="ui-social" src="images/socials/facebook.svg" alt="facebook"
 							/></a>
 
-							<a href="https://vprognoze.ru/cybersport/pudge-dota-2-gaid-na-geroya/" target="_blank"
+							<a
+								aria-label="twitter"
+								href="https://vprognoze.ru/cybersport/pudge-dota-2-gaid-na-geroya/"
+								target="_blank"
 								><img class="ui-social" src="images/socials/twitter.svg" alt="twitter"
 							/></a>
 						</div>
@@ -287,6 +302,7 @@
 						</div>
 
 						<button
+							aria-label="about us"
 							class="people-about__button ui-button"
 							type="button"
 							data-aos="fade-right"
@@ -524,19 +540,31 @@
 					<img class="links__arrow" src="images/icons/divider.svg" alt="divider" />
 
 					<div class="ui-links__wrapper">
-						<a class="i3-r-r ui-links__info" href="https://dota2.fandom.com/ru/wiki/Pudge" target="_blank"
+						<a
+							aria-label="our mission"
+							class="i3-r-r ui-links__info"
+							href="https://dota2.fandom.com/ru/wiki/Pudge"
+							target="_blank"
 							>Our Mission</a
 						>
 					</div>
 
 					<div class="ui-links__wrapper">
-						<a class="i3-r-r ui-links__info" href="https://dota2.fandom.com/ru/wiki/Pudge" target="_blank"
+						<a
+							aria-label="terms"
+							class="i3-r-r ui-links__info"
+							href="https://dota2.fandom.com/ru/wiki/Pudge"
+							target="_blank"
 							>Terms</a
 						>
 					</div>
 
 					<div class="ui-links__wrapper">
-						<a class="i3-r-r ui-links__info" href="https://dota2.fandom.com/ru/wiki/Pudge" target="_blank"
+						<a
+							aria-label="copyrights"
+							class="i3-r-r ui-links__info"
+							href="https://dota2.fandom.com/ru/wiki/Pudge"
+							target="_blank"
 							>Copyrights</a
 						>
 					</div>
@@ -550,25 +578,41 @@
 					<img class="links__arrow" src="images/icons/divider.svg" alt="divider" />
 
 					<div class="ui-links__wrapper">
-						<a class="ui-links__info i3-r-r" href="https://dota2.fandom.com/ru/wiki/Pudge" target="_blank"
+						<a
+							aria-label="rules"
+							class="ui-links__info i3-r-r"
+							href="https://dota2.fandom.com/ru/wiki/Pudge"
+							target="_blank"
 							>Rules</a
 						>
 					</div>
 
 					<div class="ui-links__wrapper">
-						<a class="ui-links__info i3-r-r" href="https://dota2.fandom.com/ru/wiki/Pudge" target="_blank"
+						<a
+							aria-label="tickets"
+							class="ui-links__info i3-r-r"
+							href="https://dota2.fandom.com/ru/wiki/Pudge"
+							target="_blank"
 							>Tickets</a
 						>
 					</div>
 
 					<div class="ui-links__wrapper">
-						<a class="ui-links__info i3-r-r" href="https://dota2.fandom.com/ru/wiki/Pudge" target="_blank"
-							>Edtions</a
+						<a
+							aria-label="editions"
+							class="ui-links__info i3-r-r"
+							href="https://dota2.fandom.com/ru/wiki/Pudge"
+							target="_blank"
+							>Editions</a
 						>
 					</div>
 
 					<div class="ui-links__wrapper">
-						<a class="ui-links__info i3-r-r" href="https://dota2.fandom.com/ru/wiki/Pudge" target="_blank"
+						<a
+							aria-label="contribute"
+							class="ui-links__info i3-r-r"
+							href="https://dota2.fandom.com/ru/wiki/Pudge"
+							target="_blank"
 							>Contribute</a
 						>
 					</div>
@@ -582,25 +626,41 @@
 					<img class="links__arrow" src="images/icons/divider.svg" alt="divider" />
 
 					<div class="ui-links__wrapper">
-						<a class="ui-links__info i3-r-r" href="https://dota2.fandom.com/ru/wiki/Pudge" target="_blank"
+						<a
+							aria-label="star gazing"
+							class="ui-links__info i3-r-r"
+							href="https://dota2.fandom.com/ru/wiki/Pudge"
+							target="_blank"
 							>Star Gazing</a
 						>
 					</div>
 
 					<div class="ui-links__wrapper">
-						<a class="ui-links__info i3-r-r" href="https://dota2.fandom.com/ru/wiki/Pudge" target="_blank"
+						<a
+							aria-label="desert mania"
+							class="ui-links__info i3-r-r"
+							href="https://dota2.fandom.com/ru/wiki/Pudge"
+							target="_blank"
 							>Desert Mania</a
 						>
 					</div>
 
 					<div class="ui-links__wrapper">
-						<a class="ui-links__info i3-r-r" href="https://dota2.fandom.com/ru/wiki/Pudge" target="_blank"
+						<a
+							aria-label="dunes madness"
+							class="ui-links__info i3-r-r"
+							href="https://dota2.fandom.com/ru/wiki/Pudge"
+							target="_blank"
 							>Dunes Madness</a
 						>
 					</div>
 
 					<div class="ui-links__wrapper">
-						<a class="ui-links__info i3-r-r" href="https://dota2.fandom.com/ru/wiki/Pudge" target="_blank"
+						<a
+							aria-label="spooky land"
+							class="ui-links__info i3-r-r"
+							href="https://dota2.fandom.com/ru/wiki/Pudge"
+							target="_blank"
 							>Spooky Land</a
 						>
 					</div>
@@ -634,15 +694,18 @@
 					<img class="links__arrow" src="images/icons/divider.svg" alt="divider" />
 
 					<div class="links__social">
-						<a href="https://vprognoze.ru/cybersport/pudge-dota-2-gaid-na-geroya/" target="_blank"
+						<a
+							aria-label="twitter"
+							href="https://vprognoze.ru/cybersport/pudge-dota-2-gaid-na-geroya/"
+							target="_blank"
 							><img class="ui-social" src="images/socials/twitter.svg" alt="twitter"
 						/></a>
 
-						<a href="https://dota2.fandom.com/ru/wiki/Pudge" target="_blank"
+						<a aria-label="instagram" href="https://dota2.fandom.com/ru/wiki/Pudge" target="_blank"
 							><img class="ui-social" src="images/socials/instagram.svg" alt="instagram"
 						/></a>
 
-						<a href="https://cyber.sports.ru/dota2/blogs/2904107.html" target="_blank"
+						<a aria-label="facebook" href="https://cyber.sports.ru/dota2/blogs/2904107.html" target="_blank"
 							><img class="ui-social" src="images/socials/facebook.svg" alt="facebook"
 						/></a>
 					</div>
