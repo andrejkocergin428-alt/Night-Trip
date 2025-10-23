@@ -29,6 +29,7 @@
 			rgba(1, 22, 39, 1) 10%,
 			rgba(1, 22, 39, 0) 20%,
 			rgba(1, 22, 39, 0) 100%);
+	z-index: -5;
 }
 
 .section-people__container {
@@ -60,7 +61,7 @@
 
 .section-people__dots {
 	position: absolute;
-	right: -80px;
+	right: 20px;
 	top: 20%;
 }
 
