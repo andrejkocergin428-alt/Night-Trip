@@ -64,6 +64,7 @@
 }
 
 .section-trip__relaxation {
+	align-items: center;
 	gap: 126px;
 	display: flex;
 	flex-direction: row;
@@ -76,7 +77,6 @@
 }
 
 .trip-relaxation__title {
-	padding-top: 100px;
 	margin-bottom: 70px;
 }
 
@@ -100,11 +100,17 @@
 	position: relative;
 }
 .card__buttons {
+	display: flex;
 	position: absolute;
 	bottom: 0;
 	right: 0;
 }
+.button-card__svg:hover {
+	transform: scale(1.1);
+	border-radius: 12px;
+}
 .button-card__svg {
+	transition: 0.3s ease;
 	bottom: 0;
 	right: 0;
 	position: relative;

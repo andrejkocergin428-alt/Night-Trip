@@ -1,6 +1,7 @@
 .section-people {
 	padding-top: 300px;
 	overflow: hidden;
+	padding-bottom: 250px;
 }
 
 .section-people__background {
@@ -25,6 +26,7 @@
 
 .section-people__container {
 	position: relative;
+	align-items: center;
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
@@ -32,7 +34,6 @@
 }
 
 .section-people__about {
-	padding-top: 80px;
 	display: flex;
 	max-width: 350px;
 	flex-direction: column;
@@ -103,6 +104,7 @@
 	.section-people {
 		padding-top: 50px;
 	}
+
 	.section-people__container {
 		flex-direction: column;
 		align-items: center;
@@ -112,6 +114,7 @@
 		align-items: center;
 		text-align: center;
 		padding-top: 0;
+		padding-bottom: 50px;
 	}
 	.section-people__dots {
 		display: none;
@@ -119,7 +122,6 @@
 	.section-people__cards {
 		width: 100%;
 		height: auto;
-		padding-top: 50px;
 		justify-content: center;
 	}
 	.section-people__cards img {

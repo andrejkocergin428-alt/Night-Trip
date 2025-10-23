@@ -6,10 +6,10 @@
 	width: 100%;
 	padding: 0;
 	height: 700px;
+	padding-top: 150px;
 }
 
 .footer__links {
-	padding-top: 150px;
 	width: 1025px;
 	height: max-content;
 	display: flex;
@@ -44,11 +44,11 @@
 @media (max-width: 768px) {
 	.footer {
 		height: 500px;
+		padding-top: 50px;
 	}
 	.footer__links {
 		width: 90%;
 		flex-direction: row;
-		padding-top: 50px;
 	}
 }
 @media (max-width: 480px) {
