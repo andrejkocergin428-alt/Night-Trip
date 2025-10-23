@@ -134,39 +134,51 @@
 	.i1-r-r {
 		font-size: var(--font-size-i1-m);
 	}
+
 	.h1-b-n {
 		font-size: var(--font-size-h1-m);
 	}
+
 	.s3-b-r {
 		font-size: var(--font-size-s3-m);
 	}
+
 	.i2-b-r {
 		font-size: var(--font-size-i2-m);
 	}
+
 	.i3-r-r {
 		font-size: var(--font-size-i3-m);
 	}
+
 	.i4-b-n {
 		font-size: var(--font-size-i4-m);
 	}
+
 	.h2-b-n {
 		font-size: var(--font-size-h2-m);
 	}
+
 	.h3-r-n {
 		font-size: var(--font-size-h3-m);
 	}
+
 	.s2-b-r {
 		font-size: var(--font-size-s2-m);
 	}
+
 	.s1-b-p {
 		font-size: var(--font-size-s1-m);
 	}
+
 	.h2-r-n {
 		font-size: var(--font-size-h2-m);
 	}
+
 	.i2-r-r {
 		font-size: var(--font-size-i2-m);
 	}
+
 	.s3-l-r {
 		font-size: var(--font-size-s3-m);
 	}

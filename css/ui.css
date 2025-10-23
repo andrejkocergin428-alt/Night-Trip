@@ -9,7 +9,6 @@
 	padding: 20px 60px 20px 60px;
 	transition: 0.3s ease;
 	color: var(--color-white);
-	letter-spacing: 3px;
 	width: max-content;
 }
 
@@ -26,11 +25,13 @@
 	transition: all 0.6s ease;
 	max-height: 0;
 }
+
 .ui-dropdown {
 	position: relative;
 	display: flex;
 	flex-direction: row;
 }
+
 .ui-dropdown__link {
 	border-radius: 20px;
 	text-decoration: none;
@@ -40,22 +41,27 @@
 	text-align: center;
 	transition: 0.3s ease;
 }
+
 .ui-dropdown__link:hover {
 	opacity: 0.8;
 	transform: scale(1.1);
 }
+
 .ui-dropdown input {
 	display: none;
 }
-.ui-dropdown input:checked ~ .ui-dropdown__box {
+
+.ui-dropdown input:checked~.ui-dropdown__box {
 	max-height: 200px;
 	border-radius: 0 0 12px 12px;
 }
-.ui-dropdown input:checked ~ .ui-button {
+
+.ui-dropdown input:checked~.ui-button {
 	max-height: 200px;
 	border-radius: 12px 12px 0 0;
 	transform: scale(1);
 }
+
 .ui-social {
 	transition: 0.5s ease;
 	display: flex;
@@ -65,6 +71,7 @@
 	gap: 22px;
 	color: var(--color-main);
 }
+
 .ui-social:hover {
 	transform: scale(1.3);
 }
@@ -99,6 +106,7 @@
 	transform: rotate(180deg) translateY(-50%);
 	left: -15px;
 }
+
 .ui-dropdown__button:hover .ui-button__line {
 	transform: rotate(180deg) translateY(-50%);
 	left: -15px;
@@ -107,6 +115,7 @@
 .ui-button:active .ui-button__line {
 	transform: rotate(360deg) translateY(-50%);
 }
+
 .ui-dropdown__button:checked .ui-button__line {
 	transform: rotate(360deg) translateY(-50%);
 }
@@ -122,7 +131,6 @@
 	background-color: var(--color-white);
 	position: absolute;
 	transform: translateY(-180%) translateX(-20%);
-	letter-spacing: 1px;
 	transition: 0.3s all;
 	opacity: 0;
 	visibility: hidden;
@@ -136,9 +144,11 @@
 	height: 80px;
 	transform: translateX(-50%);
 }
+
 .ui-section__line--up {
 	top: -40px;
 }
+
 .ui-section__line--down {
 	bottom: -120px;
 }
@@ -159,6 +169,7 @@
 .ui-links__info:hover {
 	opacity: 0.5;
 }
+
 @media (max-width: 768px) {
 	.ui-button {
 		padding: 15px 40px 15px 40px;
@@ -179,29 +190,35 @@
 	.ui-links {
 		gap: 15px;
 	}
+
 	.ui-dropdown__box {
 		width: 125px;
 	}
 }
+
 @media (hover: hover) {
 	.ui-button:hover {
 		transform: scale(1.1);
 	}
+
 	.ui-button:hover .ui-button__line {
 		transform: rotate(180deg) translateY(-50%);
 		left: -15px;
 	}
+
 	.ui-cards__board:hover {
 		opacity: 1;
 		visibility: visible;
 	}
 }
+
 @media (max-width: 480px) {
 	.ui-links {
 		gap: 10px;
 		align-items: flex-start;
 		flex: 0 1 45%;
 	}
+
 	.ui-section__line--down {
 		bottom: -85px;
 	}

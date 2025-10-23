@@ -34,7 +34,7 @@
 .header__svg--search:hover {
 	transform: scale(1.1);
 }
-.header__action--search {
+.header-action__search {
 	display: none;
 	border: 2px solid var(--color-main);
 	padding: 5px 15px;
@@ -47,16 +47,18 @@
 	outline: none;
 }
 
-.header__wrapper input:checked ~ .header__action--search {
+.header__wrapper input:checked ~ .header-action__search {
 	display: block;
 }
 @media (max-width: 768px) {
 	.header__wrapper {
 		gap: 20px;
 	}
+
 	.header__logo {
 		font-size: var(--font-size-s1-m);
 	}
+
 	.header {
 		padding-top: 20px;
 	}

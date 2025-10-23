@@ -6,7 +6,8 @@
 	right: 0;
 	bottom: 0;
 }
-.section-main__background--img {
+
+.main-background__img {
 	object-fit: cover;
 	width: 100%;
 	height: 100vh;
@@ -98,13 +99,16 @@
 	height: 380px;
 	bottom: 0;
 }
+
 @media (max-width: 768px) {
 	.section-main__navigation {
 		bottom: 150px;
 	}
+
 	.section-main__words {
 		gap: 15px;
 	}
+
 	.section-main__socials {
 		padding-right: 15px;
 	}
