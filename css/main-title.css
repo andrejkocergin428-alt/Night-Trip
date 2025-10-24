@@ -46,7 +46,7 @@
 }
 
 .section-main__navigation {
-	z-index: 10;
+	z-index: 1;
 	position: absolute;
 	display: flex;
 	justify-content: space-between;

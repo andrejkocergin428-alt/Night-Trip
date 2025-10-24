@@ -4,7 +4,7 @@
 	right: 0;
 	padding-top: 50px;
 	position: fixed;
-	z-index: 100;
+	z-index: 1;
 }
 
 .header__nav {
@@ -31,9 +31,11 @@
 	z-index: 1;
 	transition: 0.5s all;
 }
+
 .header__svg--search:hover {
 	transform: scale(1.1);
 }
+
 .header-action__search {
 	display: none;
 	border: 2px solid var(--color-main);
@@ -47,9 +49,10 @@
 	outline: none;
 }
 
-.header__wrapper input:checked ~ .header-action__search {
+.header__wrapper input:checked~.header-action__search {
 	display: block;
 }
+
 @media (max-width: 768px) {
 	.header__wrapper {
 		gap: 20px;
